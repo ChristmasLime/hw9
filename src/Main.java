@@ -26,7 +26,7 @@ public class Main {
     public static void task2() {
         System.out.println("Задача 2");
         int[] arr = generateRandomArray();
-        int max = 0;
+        int max = 100000;
         int min = 200000;
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] > max) {
@@ -40,11 +40,10 @@ public class Main {
         System.out.println("Задача 3");
         int[] arr = generateRandomArray();
         float sum = 0;
-        float day = 30;
-        for (int element:arr){
-            sum+=element;
+        for (int j:arr){
+            sum+=j;
 
-        }sum=sum/day;
+        }sum=sum/ arr.length;
         System.out.println("Средняя сумма трат за месяц составила " +sum+" рублей.");
     }
     public static void task4() {
